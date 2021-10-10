@@ -1,14 +1,16 @@
-import styles from '@styles/Post.module.css';
+import { useContext } from 'react';
+import Link from 'next/link';
+import { useDocumentData } from 'react-firebase-hooks/firestore';
+
 import PostContent from '@components/PostContent';
 import HeartButton from '@components/HeartButton';
 import AuthCheck from '@components/AuthCheck';
 import Metatags from '@components/Metatags';
+
 import { UserContext } from '@lib/context';
 import { firestore, getUserWithUsername, postToJSON } from '@lib/firebase';
 
-import Link from 'next/link';
-import { useDocumentData } from 'react-firebase-hooks/firestore';
-import { useContext } from 'react';
+import styles from '@styles/Post.module.css';
 
 export async function getStaticProps({ params }) {
   const { username, slug } = params;

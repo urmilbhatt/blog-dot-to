@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import { useContext } from 'react';
+import Link from 'next/link';
+
 import { UserContext } from '@lib/context';
 
 // Component's children only show to logged-in users

@@ -1,9 +1,10 @@
 import { useState } from 'react';
 
-import { firestore, fromMillis, postToJSON } from '@lib/firebase';
 import Loader from '@components/Loader';
 import PostFeed from '@components/PostFeed';
 import Metatags from '@components/Metatags';
+
+import { firestore, fromMillis, postToJSON } from '@lib/firebase';
 
 // Max post to query per page
 const LIMIT = 10;
