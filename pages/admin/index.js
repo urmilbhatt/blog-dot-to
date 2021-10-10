@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { useRouter } from "next/router";
 import { useCollection } from 'react-firebase-hooks/firestore';
-import kebabCase from "lodash.kebabCase";
+import kebabCase from "lodash.kebabcase";
 import toast from "react-hot-toast";
 import AuthCheck from "@components/AuthCheck";
 import PostFeed from "@components/PostFeed";
